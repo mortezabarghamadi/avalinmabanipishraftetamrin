@@ -3,12 +3,18 @@ import org.junit.jupiter.api.Test;
 public class Mashinetest {
     @Test
     void Mashin_dar_hal_harekat_ast() {
-
-
-        class mashin {
+        Mashin mustang = new Mashin("mustang");
+        mustang.bastandar();
+        mustang.roshan();
+        mustang.harekat();
+    }
+        class Mashin {
             boolean ayaroshanast;
             boolean ayadarbazast;
-
+            String mark;
+            Mashin(String mark){
+                this.mark=mark;
+            }
             void roshan() {
                 System.out.println("mashin roshan ast");
                 ayaroshanast = true;
@@ -31,7 +37,7 @@ public class Mashinetest {
 
             void harekat() {
                 if (!ayadarbazast && ayaroshanast) {
-                    System.out.println("mashindar hal harkat ast");
+                    System.out.println("mashin  dar hal harkat ast");
                 } else {
                     System.out.println("mashin park shode");
                 }
@@ -39,4 +45,3 @@ public class Mashinetest {
         }
 
     }
-}
