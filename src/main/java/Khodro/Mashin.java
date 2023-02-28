@@ -1,22 +1,13 @@
-package Kodro;
+package Khodro;
 
-public class Mashin {
+public class Mashin extends Khodro {
 
-    public boolean ayaroshanast;
-    public boolean ayadarbazast;
+    public boolean ayadarbazast ;
     public String mark;
     public Mashin(String mark){
         this.mark=mark;
     }
-    public void roshan() {
-        System.out.println("mashin roshan ast");
-        ayaroshanast = true;
-    }
 
-    void khamosh() {
-        System.out.println("mashin khamosh ast");
-        ayaroshanast = false;
-    }
 
     void bazkardan() {
         System.out.println("dar baz ast");

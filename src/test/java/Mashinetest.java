@@ -1,4 +1,4 @@
-import Kodro.Mashin;
+import Khodro.Mashin;
 import org.junit.jupiter.api.Test;
 
 public class Mashinetest {
